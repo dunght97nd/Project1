@@ -41,7 +41,7 @@
                             <tbody>
                             @foreach($carts as $cart)  
                                 <tr>
-                                    <td class="cart-pic first-row"><img style="height: 200px;" src="front/img/products/{{$cart->options->images[0]->path}}" alt=""></td>
+                                    <td class="cart-pic first-row"><img style="height: 200px;" src="./front/img/products/{{$cart->options->images[0]->path}}" alt=""></td>
 
                                     <td class="cart-title first-row">
                                         <h5 style="cursor: pointer;" onclick="window.location='./shop/product/{{$cart->id}}'">   {{$cart->name}}-{{$cart->options->color}}-{{$cart->options->size}}

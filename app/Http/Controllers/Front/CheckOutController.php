@@ -86,7 +86,7 @@ class CheckOutController extends Controller
             Session::forget('coupon');
 
             //Tra ve ket qua
-            return redirect('checkout/result')->with('notification','Success ! You will pay on delivery !');
+            return redirect('checkout/result')->with('notification','Your order has been sent to your email, please check again, You will pay on delivery, thank you very much !');
         } else {
             return redirect('checkout/result')->with('notification','Online payment method is not supported !');
         }

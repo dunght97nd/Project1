@@ -153,7 +153,7 @@
                             <div class="product-pic-zoom">
                                 <img 
                                 @if(count($product->productImages) > 0) 
-                                src="front/img/products/{{$product->productImages[0]->path}}"
+                                src="./front/img/products/{{$product->productImages[0]->path}}"
                                 @endif alt="" class="product-big-img">
                                 <div class="zoom-icon">
                                     <i class="fa fa-search-plus"></i>
@@ -162,8 +162,8 @@
                             <div class="product-thumbs">
                                 <div class="product-thumbs-track ps-slider owl-carousel">
                                 @foreach($product->productImages as $productImage)
-                                    <div class="pt active" data-imgbigurl="front/img/products/{{$productImage->path}}">
-                                        <img src="front/img/products/{{$productImage->path}}" alt="">
+                                    <div class="pt active" data-imgbigurl="./front/img/products/{{$productImage->path}}">
+                                        <img src="./front/img/products/{{$productImage->path}}" alt="">
                                     </div>
                                 @endforeach
                                 </div>
@@ -302,7 +302,7 @@
                                                 {!!$product->description!!}
                                             </div>
                                             <div class="col-lg-6">
-                                                <img src="https://storage.googleapis.com/cdn.nhanh.vn/store/662/artCT/66073/600x400.jpg" alt="">
+                                                <img src="./front/img/description.jpg" alt="">
                                             </div>
                                         </div>
                                     </div>
@@ -397,7 +397,7 @@
                                             @foreach($product->productComments as $productComment)
                                             <div class="co-item">
                                                 <div class="avatar-pic">
-                                                    <img src="front/img/product-single/{{$productComment->user->avatar ?? 'default-avatar.png'}}" alt="">
+                                                    <img src="./front/img/product-single/{{$productComment->user->avatar ?? 'default-avatar.png'}}" alt="">
                                                 </div>
                                                 <div class="avatar-text">
                                                     <div class="at-rating">

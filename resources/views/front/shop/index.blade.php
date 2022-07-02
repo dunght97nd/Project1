@@ -118,29 +118,29 @@
                                     <label for="l-size" class="{{request('size')=='l' ? 'active' : ''}}">l</label>
                                 </div>
                                 <div class="sc-item">
-                                    <input type="radio" name="size" id="xs-size" value="xs" onchange="this.form.submit();" {{request('size')=='xs' ? 'checked' : ''}}>
-                                    <label for="xs-size" class="{{request('size')=='xs' ? 'active' : ''}}">xs</label>
+                                    <input type="radio" name="size" id="xl-size" value="xl" onchange="this.form.submit();" {{request('size')=='xl' ? 'checked' : ''}}>
+                                    <label for="xl-size" class="{{request('size')=='xl' ? 'active' : ''}}">xl</label>
                                 </div>
                                 <div class="sc-item">
-                                    <input type="radio" name="size" id="38-size" value="38" onchange="this.form.submit();" {{request('size')=='38' ? 'checked' : ''}}>
-                                    <label for="38-size" class="{{request('size')=='38' ? 'active' : ''}}">38</label>
+                                    <input type="radio" name="size" id="2xl-size" value="2xl" onchange="this.form.submit();" {{request('size')=='2xl' ? 'checked' : ''}}>
+                                    <label for="2xl-size" class="{{request('size')=='2xl' ? 'active' : ''}}">2xl</label>
                                 </div>
                                 <div class="sc-item">
-                                    <input type="radio" name="size" id="39-size" value="39" onchange="this.form.submit();" {{request('size')=='39' ? 'checked' : ''}}>
-                                    <label for="39-size" class="{{request('size')=='39' ? 'active' : ''}}">39</label>
+                                    <input type="radio" name="size" id="3xl-size" value="3xl" onchange="this.form.submit();" {{request('size')=='3xl' ? 'checked' : ''}}>
+                                    <label for="3xl-size" class="{{request('size')=='3xl' ? 'active' : ''}}">3xl</label>
                                 </div>
                                 <div class="sc-item">
-                                    <input type="radio" name="size" id="40-size" value="40" onchange="this.form.submit();" {{request('size')=='40' ? 'checked' : ''}}>
-                                    <label for="40-size" class="{{request('size')=='40' ? 'active' : ''}}">40</label>
+                                    <input type="radio" name="size" id="4xl-size" value="4xl" onchange="this.form.submit();" {{request('size')=='4xl' ? 'checked' : ''}}>
+                                    <label for="4xl-size" class="{{request('size')=='4xl' ? 'active' : ''}}">4xl</label>
                                 </div>
-                                <div class="sc-item">
+                                {{-- <div class="sc-item">
                                     <input type="radio" name="size" id="41-size" value="41" onchange="this.form.submit();" {{request('size')=='41' ? 'checked' : ''}}>
                                     <label for="41-size" class="{{request('size')=='41' ? 'active' : ''}}">41</label>
                                 </div>
                                 <div class="sc-item">
                                     <input type="radio" name="size" id="42-size" value="42" onchange="this.form.submit();" {{request('size')=='42' ? 'checked' : ''}}>
                                     <label for="42-size" class="{{request('size')=='42' ? 'active' : ''}}">42</label>
-                                </div>
+                                </div> --}}
                             </div>
                         </div>
                         <div class="filter-widget">

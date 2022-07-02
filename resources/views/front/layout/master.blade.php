@@ -15,24 +15,24 @@
 
     <!-- Css Styles -->
     <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css">
-    <link rel="stylesheet" href="front/css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="front/css/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" href="front/css/themify-icons.css" type="text/css">
-    <link rel="stylesheet" href="front/css/elegant-icons.css" type="text/css">
-    <link rel="stylesheet" href="front/css/owl.carousel.min.css" type="text/css">
-    <link rel="stylesheet" href="front/css/nice-select.css" type="text/css">
-    <link rel="stylesheet" href="front/css/jquery-ui.min.css" type="text/css">
-    <link rel="stylesheet" href="front/css/slicknav.min.css" type="text/css">
-    <link rel="stylesheet" href="front/css/style.css" type="text/css">
+    <link rel="stylesheet" href="./front/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="./front/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="./front/css/themify-icons.css" type="text/css">
+    <link rel="stylesheet" href="./front/css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="./front/css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="./front/css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="./front/css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="./front/css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="./front/css/style.css" type="text/css">
 </head>
 
 <body>
     <!-- Start coding here -->
 
     <!-- Page preloder start -->
-    <div id="preloder">
+    {{-- <div id="preloder">
         <div class="loader"></div>
-    </div>
+    </div> --}}
     <!-- Page preloder end -->
 
     <!-- Header section start -->
@@ -54,7 +54,7 @@
                         <div class="login-panel">
                             <a href="user" style="display: flex;align-items: center;">
                                 <img 
-                                style="width: 30px;height: 30px;margin-right: 10px;border-radius: 50%;" src="front/img/product-single/{{Auth::user()->avatar}}" alt=""></i>
+                                style="width: 30px;height: 30px;margin-right: 10px;border-radius: 50%;" src="./front/img/product-single/{{Auth::user()->avatar}}" alt=""></i>
                                 {{Auth::user()->name}}
                             </a>
 
@@ -67,8 +67,8 @@
                     @endif
                     {{-- <div class="lan-selector">
                         <select name="countries" id="countries" style="width: 300px;" class="language_drop">
-                            <option value="yt" data-image="front/img/flag-1.jpg" data-imagecss="flag yt" data-title="English">English</option>
-                            <option value="yu" data-image="front/img/flag-2.jpg" data-imagecss="flag yu" data-title="Banglades">German</option>
+                            <option value="yt" data-image="./front/img/flag-1.jpg" data-imagecss="flag yt" data-title="English">English</option>
+                            <option value="yu" data-image="./front/img/flag-2.jpg" data-imagecss="flag yu" data-title="Banglades">German</option>
                         </select>
                     </div> --}}
                     <div class="top-social">
@@ -95,7 +95,7 @@
                     <div class="col-lg-7 col-md-7">
                         <form action="shop">
                             <div class="advanced-search">
-                                <button type="button" class="category-btn">All Categories</button>
+                                {{-- <button type="button" class="category-btn">All Categories</button> --}}
                                 <div class="input-group">
                                     <input name="search" type="text" value="{{request('search')}}" placeholder="What do you need ?">
                                     <button type="submit"><i class="ti-search"></i></button>
@@ -105,12 +105,12 @@
                     </div>
                     <div class="col-lg-3 col-md-3 text-right">
                         <ul class="nav-right">
-                            <li class="heart-icon">
+                            {{-- <li class="heart-icon">
                                 <a href="#">
                                     <i class="icon_heart_alt"></i>
                                     <span>1</span>
                                 </a>
-                            </li>
+                            </li> --}}
                             <li class="cart-icon">
                                 <a href="./cart">
                                     <i class="icon_bag_alt"></i>
@@ -122,7 +122,7 @@
                                             <tbody>
                                             @foreach(Cart::content() as $cart)
                                                 <tr>
-                                                    <td class="si-pic"><img style="height: 70px;" src="front/img/products/{{$cart->options->images[0]->path}}" alt=""></td>
+                                                    <td class="si-pic"><img style="height: 70px;" src="./front/img/products/{{$cart->options->images[0]->path}}" alt=""></td>
                                                     <td class="si-text">
                                                         <div class="product-selected">
                                                             <p>${{number_format($cart->price, 2)}} x {{$cart->qty}}</p>
@@ -230,27 +230,27 @@
             <div class="logo-carousel owl-carousel">
                 <div class="logo-item">
                     <div class="tablecell-inner">
-                        <img src="front/img/logo-carousel/logo-1.png" alt="">
+                        <img src="./front/img/logo-carousel/logo-1.png" alt="">
                     </div>
                 </div>
                 <div class="logo-item">
                     <div class="tablecell-inner">
-                        <img src="front/img/logo-carousel/logo-2.png" alt="">
+                        <img src="./front/img/logo-carousel/logo-2.png" alt="">
                     </div>
                 </div>
                 <div class="logo-item">
                     <div class="tablecell-inner">
-                        <img src="front/img/logo-carousel/logo-3.png" alt="">
+                        <img src="./front/img/logo-carousel/logo-3.png" alt="">
                     </div>
                 </div>
                 <div class="logo-item">
                     <div class="tablecell-inner">
-                        <img src="front/img/logo-carousel/logo-4.png" alt="">
+                        <img src="./front/img/logo-carousel/logo-4.png" alt="">
                     </div>
                 </div>
                 <div class="logo-item">
                     <div class="tablecell-inner">
-                        <img src="front/img/logo-carousel/logo-5.png" alt="">
+                        <img src="./front/img/logo-carousel/logo-5.png" alt="">
                     </div>
                 </div>
             </div>
@@ -266,7 +266,7 @@
                     <div class="footer-left">
                         <div class="footer-logo">
                             <a href="index.html">
-                                <img src="front/img/footer-logo.png" height="25" alt="">
+                                <img src="./front/img/footer-logo.png" height="25" alt="">
                             </a>
                         </div>
                         <ul>
@@ -328,7 +328,7 @@
                             Copyright @<script type="text/javascript">document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by Dunght97</a>
                         </div>
                         <div class="payment-pic">
-                            <img src="front/img/payment-method.png" alt="">
+                            <img src="./front/img/payment-method.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -339,16 +339,16 @@
 
 
     <!-- Js Plugins -->
-    <script src="front/js/jquery-3.3.1.min.js"></script>
-    <script src="front/js/bootstrap.min.js"></script>
-    <script src="front/js/jquery-ui.min.js"></script>
-    <script src="front/js/jquery.countdown.min.js"></script>
-    <script src="front/js/jquery.nice-select.min.js"></script>
-    <script src="front/js/jquery.zoom.min.js"></script>
-    <script src="front/js/jquery.dd.min.js"></script>
-    <script src="front/js/jquery.slicknav.js"></script>
-    <script src="front/js/owl.carousel.min.js"></script>
-    <script src="front/js/main.js"></script>
+    <script src="./front/js/jquery-3.3.1.min.js"></script>
+    <script src="./front/js/bootstrap.min.js"></script>
+    <script src="./front/js/jquery-ui.min.js"></script>
+    <script src="./front/js/jquery.countdown.min.js"></script>
+    <script src="./front/js/jquery.nice-select.min.js"></script>
+    <script src="./front/js/jquery.zoom.min.js"></script>
+    <script src="./front/js/jquery.dd.min.js"></script>
+    <script src="./front/js/jquery.slicknav.js"></script>
+    <script src="./front/js/owl.carousel.min.js"></script>
+    <script src="./front/js/main.js"></script>
 </body>
 
 </html>

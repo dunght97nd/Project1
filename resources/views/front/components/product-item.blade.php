@@ -2,7 +2,7 @@
     <div class="pi-pic">
         <img 
         @if(count($product->productImages) > 0) 
-        src="front/img/products/{{ $product->productImages[0]->path }}"
+        src="./front/img/products/{{ $product->productImages[0]->path }}"
         @endif alt="">
             @if($product->discount != null)
             <div class="sale">Sale</div> 
